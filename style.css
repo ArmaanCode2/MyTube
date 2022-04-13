@@ -1,0 +1,269 @@
+#leftside{
+    width: 207px;
+    height: 630px;
+   color: red;
+    overflow-y: auto;
+  
+    float: left;
+  }
+  
+  a{
+    text-decoration: none;
+    color: red;
+  }
+  #leftside::-webkit-scrollbar{
+    width: 8px;
+  }
+  
+  #leftside::-webkit-scrollbar-thumb{
+    background:transparent;
+    border-radius: 10px;
+  }
+  
+  #leftside::-webkit-scrollbar-thumb:hover{
+   background: linear-gradient(grey,grey);
+  }
+  
+  #logo{
+    margin-top: 5px;
+    margin-left: 55px;
+    cursor: pointer;
+    font-size: 22px;
+  }
+  
+  #h{
+    text-align: center;
+    color: grey;
+    margin-top: 9px;
+    cursor: default;
+  }
+  
+  #home{
+    cursor: pointer;
+    width:80px;
+    margin-top: 30px;
+    margin-left: 12px;
+  }
+  
+  #explore{
+    width:100px;
+    margin-top: 25px;
+    margin-left: 12px;
+  }
+  
+  #subscription{
+    width:150px;
+  }
+  
+  #hr{
+    margin-left: 0px;
+    margin-top: 13px;
+    width: 190px;
+  }
+  
+  #library{
+    width:100px;
+  }
+  
+  #history{
+    width:100px;
+  }
+  
+  #your {
+    width:130px;
+  }
+  
+  #watch {
+    width:140px;
+  }
+  
+  #PREMIUM {
+    width:170px;
+  }
+  
+  #movie{
+    width:85px;
+  }
+  
+  #game{
+    width:100px;
+  }
+  
+  #live{
+    width:60px;
+  }
+  
+  #fash{
+    width:175px;
+  }
+  
+  #send {
+    width:170px;
+    padding: 5px 0px;
+  }
+  
+.all{
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 12px;
+}
+
+  /* left side end*/
+  
+  #searchbox{
+    float: left;
+    height: 43px;
+  display: flex;
+  
+  }
+  
+  #searchbox input{
+  margin-left: 155px;
+  height: 25px;
+  margin-top: 4px;
+  width: 510px; 
+  float: left;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 2px #eee;transition: width 1s;
+  }
+  
+  #box2{
+  height: 43px;
+  width: 320px;
+  float: right;
+  margin-right: 5px;
+  }
+  
+  #box2 i{
+  float: left;
+  margin: 10px;
+  margin-left: 15px;
+    cursor: pointer;
+  }
+  
+  #searchbox i{
+    margin-left: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  .h{
+    float: left;
+    width: 59px;
+    background-color: #f8f8f8;
+    height: 27px;
+    margin-top: 4px;
+    cursor: pointer;
+    border: 1px solid #D3D3D3;
+    border-radius: 0 2px 2px 0;
+  }
+  
+  .h:hover{
+        border-color:#c6c6c6;
+      background-color:#f0f0f0;
+      box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
+  }
+  
+  #i2{
+      float: left;
+      margin-top: 5px;
+      margin-right:50px;
+      width: 2%;
+      cursor: pointer;
+    }
+  
+  
+  
+  #hr2{
+    margin-top: 3px;
+    width: 1140px;
+    height: .1px;
+    float: left;
+  }
+  /* search box ended*/
+  
+  /* button line start*/
+  #btnrow{
+    height: 33px;
+    width: 1125PX;
+    display: flex;
+  }
+  
+  #btnrow button{
+    height: 32px;
+      background-color: (rgba(0,0,0,0.05));
+      border: 1px solid;
+      border-color: rgba(0,0,0,0.1);
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      padding: 12px;
+      border-radius: 16px;
+      border-width: 1px;
+      margin: 0 0 0 20px;
+      cursor: pointer;
+  }
+  
+  #brow:hover{
+    background-color: rgb(230, 230, 230);
+  }
+  
+  #vidsec img{
+    cursor: pointer;
+  }
+  
+  #vidsec{
+  display: grid;
+  grid-template-columns: repeat(4,280px);
+  }
+
+  #vid1{
+    margin-left: 22px;
+    margin-top: 22px;
+    height: 233px;
+    cursor: pointer;
+  }
+  
+  .vidlogo{
+  width: 30px;
+  float:left;
+  margin-top: 10px;
+  border-radius: 20px;
+  }
+  
+  #p{
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #allvid{
+  height: 500px;
+  width: 1150px;
+  position: absolute;
+  margin-left: 208px;
+  margin-top: 30px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  justify-content: space-between;
+  }
+  
+  #allvid::-webkit-scrollbar{
+    width: 10px;
+  }
+  
+  #allvid::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+  }
+  
+  #allvid::-webkit-scrollbar-thumb:hover{
+   background: linear-gradient(grey,grey);
+  }
+  .h1:hover{
+      transform: scale(1.1);
+      transition : all linear 0.1s;
+  }
+
+  ::-webkit-input-placeholder {
+    text-align: start;
+    padding: 5px;
+  }
