@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Merriweather&family=Prata&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    width: 35%;
+    height: 90%;
+    background-color: #F5F5F5;
+    border: 1px solid #E5E5E5;
+}
+
+.heading{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    user-select: none;
+}
+
+input{
+    width: 85%;
+    margin: 0 0 0 30px;
+    border: none;
+    background: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+
+
+input:focus-visible{
+    outline: none;
+}
+
+label{
+    margin: 0 0 0 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    transition: all .5s;
+    color: blue;
+}
+
+.inputs div{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -20px;
+    left: 0;
+    font-size: 13px;
+    color: red;
+}
+
+.toggle input{
+    width: 15px;
+}
+
+.toggle p{
+    display: inline-block;
+}
+
+.captcha{
+    margin: 15px 0 0 30px;
+    user-select: none;
+}
+/* for rresizing the captha
+.g-recaptcha{
+    transform:scale(0.9);
+    -webkit-transform:scal(0.9);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+} */
+
+.submit{
+    margin-top: 15px;
+}
+
+.submit button{
+    width: 85%;
+    height: 50px;
+    margin: 10px 0 0 30px;
+    background-color: #243dae;
+    border: none;
+    color: white;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.hover:hover{
+    cursor: pointer;
+}
+
+.refer{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.refer p{
+    display: inline-block;
+    font-family: 'Merriweather', serif;
+}
+
+.refer a{
+    text-decoration: none;
+    margin-left: 5px;
+    color: blue;
+    transition: all .5s;
+}
+
+.refer a:hover{
+    color:red;
+}
+
+.font{
+    font-family: 'Inter', sans-serif !important;
+}

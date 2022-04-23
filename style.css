@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+  --font: 'Roboto', sans-serif;
+}
+*{
+  font-family: var(--font);
+}
 #leftside{
     width: 207px;
     height: 630px;
-   color: red;
+    color: red;
     overflow-y: auto;
-  
     float: left;
   }
   
@@ -25,23 +31,61 @@
   }
   
   #logo{
-    margin-top: 5px;
-    margin-left: 55px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 25%;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 27px;
   }
-  
+  .fa-youtube{
+    color: red;
+  }
+
+  #logo p{
+    margin-left: 0;
+  }
+
+  #i3,#i6,#i4,#i5{
+    font-size: 15px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  #i4{
+    margin: 0 12px;
+  }
+
+  #i6{
+    margin: 0 9px;
+  }
+
+  .flags{
+    position: absolute;
+    top: 12px;
+    margin: 0 20px;
+  }
+
+  .india-flag{
+    left: 70%;
+  }
+
+  .red-flag{
+    left: 25%;
+  }
+
   #h{
     text-align: center;
-    color: grey;
+    color: #606060;
     margin-top: 9px;
     cursor: default;
+    font-weight: 600;
+    font-size: 15px;
   }
   
   #home{
     cursor: pointer;
     width:80px;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 12px;
   }
   
@@ -111,67 +155,74 @@
   /* left side end*/
   
   #searchbox{
-    float: left;
+    top: 2%;
+    left: 17px;
+    position: absolute;
+    width: 20%;
     height: 43px;
-  display: flex;
-  
+    display: inline-block;
+    z-index: 2;
   }
   
-  #searchbox input{
-  margin-left: 155px;
-  height: 25px;
-  margin-top: 4px;
-  width: 510px; 
+ .searchInput{
+  /* margin-left: 155px; */
+  height: 30px;
+  width: 119px; 
   float: left;
   border: 1px solid #ccc;
   box-shadow: inset 0 1px 2px #eee;transition: width 1s;
+  font-size: 15px;
   }
-  
-  #box2{
-  height: 43px;
-  width: 320px;
-  float: right;
-  margin-right: 5px;
+
+  /* #searchbox input:focus #searchbox{
+    width: 51%;
+  } */
+
+  #searchbox input:focus-visible{
+    outline: none;
   }
-  
-  #box2 i{
-  float: left;
-  margin: 10px;
-  margin-left: 15px;
-    cursor: pointer;
-  }
-  
-  #searchbox i{
-    margin-left: 20px;
-    margin-top: 5px;
-    cursor: pointer;
-  }
+
   .h{
     float: left;
-    width: 59px;
+    width: 50px;
     background-color: #f8f8f8;
-    height: 27px;
-    margin-top: 4px;
+    height: 32px;
     cursor: pointer;
     border: 1px solid #D3D3D3;
     border-radius: 0 2px 2px 0;
   }
   
+  .icon-size{
+    width: 17px;
+    height: 17px;
+  }
+
+  .h img{
+    margin-top: 6px;
+    margin-left: 15px;
+  }
+
   .h:hover{
-        border-color:#c6c6c6;
+      border-color:#c6c6c6;
       background-color:#f0f0f0;
       box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
   }
   
   #i2{
-      float: left;
-      margin-top: 5px;
-      margin-right:50px;
-      width: 2%;
-      cursor: pointer;
+    display: inline-block;
+    width: 41px;
+    height: 36px;
+    position: relative;
+    text-align: center;
+    top: 0;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  #i2 img{
+    margin-left: -10px;
+    margin-top: 8px;
     }
-  
-  
   
   #hr2{
     margin-top: 3px;
@@ -258,12 +309,82 @@
   #allvid::-webkit-scrollbar-thumb:hover{
    background: linear-gradient(grey,grey);
   }
-  .h1:hover{
-      transform: scale(1.1);
-      transition : all linear 0.1s;
-  }
 
   ::-webkit-input-placeholder {
     text-align: start;
     padding: 5px;
   }
+
+
+.signin{
+  border: 1px solid blue;
+  margin-top: 0;
+  width: 10%;
+  height: 4%;
+  float: right;
+  text-align: center;
+  padding: 8px;
+  transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.signin p{
+  display: inline;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.signin:active{
+  background-color: rgb(224, 222, 222);
+}
+
+.signin:hover{
+  cursor: pointer;
+}
+
+#i6 ul{
+  width: 300px;
+  max-height: 653px;
+  position: absolute;
+  top: 0px;
+  left: 21%;
+  z-index: 2;
+  text-align: center;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  border: 1px solid lightgray;
+  background-color: white;
+  display: none;
+}
+
+#i6 ul:hover{
+  background-color: #F2F2F2;
+}
+
+#i6 ul li,#i6 ul li img{
+  display: inline-block;
+}
+
+#i6 ul li a{
+  position: relative;
+  top: -4px;
+  left: -4px;
+  color: black;
+  font-weight: 400;
+  font-size: 18px;
+}
+#i6 ul li{
+  width: 100%;
+  height: 100%;
+  margin-left: 0;
+}
+
+#i6 ul li img{
+  position: relative;
+  left: -10px;
+  top: 2px;
+}
+
+.h1 p{
+  margin-left: 15px;
+}
