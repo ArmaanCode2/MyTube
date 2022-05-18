@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>MyTube</title>
-    <link href="style.css?version=8" rel="stylesheet" type="text/css" />
+    <link href="style.css?version=7" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/709718c5e6.js" crossorigin="anonymous"></script>
     <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
   </head>
@@ -120,18 +120,15 @@ if($loggedin){
   echo '
       <img class="flags red-flag" src="global/red-flag.png" width="30" height="30" alt="red flag">
       <div id="i3" title="Create"><i class="fas fa-video fa-lg"></i></div>
-      <div id="i6">
+      <div id="i6"><!--Evrything shown in dropdown-->
         <i onclick="showDropdown()" class="fas fa-user-circle fa-lg"></i>
           <ul>
-            // <li onclick="logout()"><img width="25" height="25" src="global/log-out.svg" alt="Log out Image"><a href="#"> Log out</a></li>
+           <li onclick="logout()"><img width="25" height="25" src="global/log-out.svg" alt="Log out Image"><a href="#"> Log out</a></li>
           </ul>
         </div>
     ';
   }
 ?>
-<div class="userSection">
-  <i class="fas fa-user-circle fa-lg"></i>
-</div>
   <i class="fab fa-youtube"><b><p style="display: inline;color:#212121;" title="MyTube">MyTube</p></b></i>
   <?php
   if($loggedin){
@@ -282,6 +279,6 @@ if($loggedin){
 
 
 </div>
-<script src="js/script.js?verson=3"></script>
+<script src="js/script.js?verson=4"></script>
   </body>
 </html>
