@@ -5,15 +5,15 @@ const signinBtn = () => {
 
 //dropdown display
 isClicked = true;
-// const showDropdown = () =>{
-//     const dropUl = document.querySelector('#i6 ul');
-//     if(isClicked){
-//         dropUl.style.display = "block";
-//     }else{
-//         dropUl.style.display = "none";
-//     }
-//     isClicked = !isClicked;
-// }
+const showDropdown = () =>{
+    const dropUl = document.querySelector('#i6 ul');
+    if(isClicked){
+        dropUl.style.display = "block";
+    }else{
+        dropUl.style.display = "none";
+    }
+    isClicked = !isClicked;
+}
 
 const logout = () =>{
     window.location.href = 'register/logout/';
