@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>MyTube</title>
-    <link href="style.css?version=7" rel="stylesheet" type="text/css" />
+    <link href="style.css?version=11" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="global/dropdown/style.css?version=4">
     <script src="https://kit.fontawesome.com/709718c5e6.js" crossorigin="anonymous"></script>
     <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
   </head>
@@ -112,7 +113,7 @@
 <!-- leftside end-->
 
 <!-- search box start-->
-
+<img src="global/dropdown/drop.php" alt="">
 <div id="logo" class="h1">
 <?php
 // session_destroy();
@@ -122,10 +123,11 @@ if($loggedin){
       <div id="i3" title="Create"><i class="fas fa-video fa-lg"></i></div>
       <div id="i6"><!--Evrything shown in dropdown-->
         <i onclick="showDropdown()" class="fas fa-user-circle fa-lg"></i>
-          <ul>
-           <li onclick="logout()"><img width="25" height="25" src="global/log-out.svg" alt="Log out Image"><a href="#"> Log out</a></li>
-          </ul>
-        </div>
+        <div class="blend"></div>
+          <ul style="display:none;">';}?>
+          <?php if ($loggedin){ echo include 'global/dropdown/drop.php';
+         echo '</ul>
+         </div>
     ';
   }
 ?>
@@ -174,10 +176,8 @@ if($loggedin){
 <button id="brow">Boruto</button>
 
 </div>
-
 <div id="allvid">
 <div id="vidsec">
-
 <div id="vid1">
   <iframe width="264" height="150" src="https://www.youtube.com/embed/jqeJ-loLG3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <div><img class="vidlogo" src="./global/channel_logo.jpg">
@@ -279,6 +279,6 @@ if($loggedin){
 
 
 </div>
-<script src="js/script.js?verson=4"></script>
+<script src="js/script.js?verson=5"></script>
   </body>
 </html>

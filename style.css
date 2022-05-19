@@ -2,9 +2,19 @@
 :root{
   --font: 'Roboto', sans-serif;
 }
+
+.overflow{
+  overflow: hidden;
+}
+
 *{
   font-family: var(--font);
 }
+
+#leftside p{
+  margin-left: 12px;
+}
+
 #leftside{
     width: 207px;
     height: 630px;
@@ -53,10 +63,6 @@
 
   #i4{
     margin: 0 12px;
-  }
-
-  #i6{
-    margin: 0 9px;
   }
 
   .flags{
@@ -342,13 +348,12 @@
 }
 
 #i6 ul{
-  width: 300px;
-  max-height: 653px;
+  width: 29%;
+  height: 100%;
   position: absolute;
   top: 0px;
-  left: 21%;
-  z-index: 2;
-  text-align: center;
+  left: 14%;
+  z-index:10;
   padding-inline-start: 0;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -357,34 +362,17 @@
   display: none;
 }
 
-#i6 ul:hover{
-  background-color: #F2F2F2;
-}
-
-#i6 ul li,#i6 ul li img{
-  display: inline-block;
-}
-
-#i6 ul li a{
-  position: relative;
-  top: -4px;
-  left: -4px;
-  color: black;
-  font-weight: 400;
-  font-size: 18px;
-}
-#i6 ul li{
-  width: 100%;
-  height: 100%;
-  margin-left: 0;
-}
-
-#i6 ul li img{
-  position: relative;
-  left: -10px;
-  top: 2px;
-}
-
-.h1 p{
-  margin-left: 15px;
+.blend{
+  position: fixed; 
+  display: none; 
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index:7;
+  transition: all 2s;
+  cursor: default;
 }

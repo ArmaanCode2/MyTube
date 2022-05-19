@@ -5,12 +5,17 @@ const signinBtn = () => {
 
 //dropdown display
 isClicked = true;
+const dropUl = document.querySelector('#i6 ul');
+const blend = document.querySelector(".blend")
+const body = document.querySelector("body")
 const showDropdown = () =>{
-    const dropUl = document.querySelector('#i6 ul');
     if(isClicked){
+        blend.style.display = "block";
         dropUl.style.display = "block";
+        body.classList.add("overflow")
     }else{
         dropUl.style.display = "none";
+        blend.style.display = "none";
     }
     isClicked = !isClicked;
 }
@@ -34,4 +39,10 @@ function searchFocusIn(){
 function searchFocusOut(){
     searchInput.style.width = "119px";
     searchBox.style.width = "35%";
+}
+
+function dropdownClose(){
+    dropUl.style.display = "none";
+    blend.style.display = "none";
+    body.classList.remove("overflow")
 }
