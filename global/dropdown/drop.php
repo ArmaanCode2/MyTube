@@ -19,7 +19,7 @@ echo '<div class="dropdown allllll">
         <img class="icon" src="global/dropdown/img/changeuser.png" alt="change Account">
         <p class="ptag">Switch Account</p>
     </div>
-    <div class="logout cursor hover">
+    <div onclick="logout()" class="logout cursor hover">
         <img class="icon" src="global/dropdown/img/signout.png" alt="sign out">
         <p class="ptag">Sign Out</p>
     </div>

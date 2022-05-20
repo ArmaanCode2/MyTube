@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>MyTube</title>
-    <link href="style.css?version=11" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="global/dropdown/style.css?version=4">
+    <link href="style.css?version=12" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="global/dropdown/style.css?version=5">
     <script src="https://kit.fontawesome.com/709718c5e6.js" crossorigin="anonymous"></script>
     <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
   </head>
@@ -50,46 +50,71 @@
 <div id="history" class="h1 all">
 <i class="fas fa-history"><b><p style="display: inline;color:#212121;">History</p></b></i>
 </div>
-
-<div id="your" class="h1 all">
+<?php
+if($loggedin){
+echo '<div id="your" class="h1 all">
 <i class="fas fa-video"><b><p style="display: inline;color:#212121;">Your Video</p></b></i>
 </div>
 
 <div id="watch" class="h1 all">
 <i class="fas fa-clock"><b><p style="display: inline;color:#212121;">Watch Later</p></b></i>
-</div>
-
+</div>';
+}
+?>
 <hr width="14%" id="hr">
-
-<h4 id="h">MORE FROM MYTUBE</h4>
-
+<?php
+if($loggedin){
+  echo '<h4 id="h">MORE FROM MYTUBE</h4>';
+}else{
+  echo '<div class="leftsignin">
+  <p>Sign in to like videos, comment, and subscribe.</p>
+  <div onclick="signinBtn()" class="signin">
+              <lord-icon
+                  src="https://cdn.lordicon.com/dklbhvrt.json"
+                  trigger="hover"
+                  style="width:25px;height:25px;margin-right:10px;"
+                  color="blue">
+              </lord-icon>
+              <p>LOG IN</p>
+            </div>
+  </div>
+  <hr width="14%" id="hr">';
+}
+?>
 <div id="PREMIUM" class="h1 all">
 <i class="fab fa-youtube"><b><p style="display: inline;color:#212121; font-size:15px;">MyTube Premium</p></b></i>
 </div>
-
-<div id="movie" class="h1 all">
+<?php
+if($loggedin){
+  echo '<div id="movie" class="h1 all">
 <i class="fas fa-film"><b><p style="display: inline;color:#212121;">Movies</p></b></i>
 </div>
 
 <div id="game" class="h1 all">
 <i class="fas fa-gamepad"><b><p style="display: inline;color:#212121;">Gaming</p></b></i>
-</div>
+</div>';
+}
+?>
 
 <div id="live" class="h1 all">
 <i class="fas fa-stream"><b><p style="display: inline;color:#212121;">Live</p></b></i>
 </div>
-
-<div id="fash" class="h1 all">
-<i class="fas fa-tshirt"><b><p style="display: inline;color:#212121;">Fasion & Beauty</p></b></i>
-</div>
-
-<div id="your" class="h1 all">
-<i class="fas fa-lightbulb"><b><p style="display: inline;color:#212121;">Learning</p></b></i>
-</div>
-
-<div id="game" class="h1 all">
-<i class="fas fa-trophy"><b><p style="display: inline;color:#212121;">Sports</p></b></i>
-</div>
+<?php
+if($loggedin){
+  echo '
+  <div id="fash" class="h1 all">
+    <i class="fas fa-tshirt"><b><p style="display: inline;color:#212121;">Fasion & Beauty</p></b></i>
+  </div>
+  
+  <div id="your" class="h1 all">
+    <i class="fas fa-lightbulb"><b><p style="display: inline;color:#212121;">Learning</p></b></i>
+  </div>
+  
+  <div id="game" class="h1 all">
+    <i class="fas fa-trophy"><b><p style="display: inline;color:#212121;">Sports</p></b></i>
+  </div>';
+}
+?>
 
 <hr width="14%" id="hr">
 
@@ -107,6 +132,12 @@
 
 <div id="send" class="h1 all">
 <i class="fas fa-comments"><b><p style="display: inline;color:#212121;">Send Feedback</p></b></i>
+</div>
+<hr width="14%" id="hr">
+<div class="endInfo">
+  <p>We Team of MyTube present This Website</p>
+  <p>Founder: Deepak Vashisht</p>
+  <p>Developer: Armaan Vashisht</p>
 </div>
 
 </div>

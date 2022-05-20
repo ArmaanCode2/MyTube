@@ -92,6 +92,8 @@
 .d-cross{
     height: 35px !important;
     width: 35px !important;
-    top: -10px !important;
-    right: 10px;
+    position: absolute !important;
+    top: 7px !important;
+    right: 16px;
+    left: auto !important;
 }
