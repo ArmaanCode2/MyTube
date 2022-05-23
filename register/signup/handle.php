@@ -26,8 +26,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     $hash  = password_hash($pass , PASSWORD_DEFAULT);
                     $sql ="INSERT INTO `register` (`name`, `email`,  `password`,`date`) VALUES ('$username', '$email', '$hash',current_timestamp())";//to be changed
                     $result = mysqli_query($conn,$sql);
+                    $_SESSION['loggedin'] = true;
+                    $_SESSION['username'] = $username;
+                    $_SESSION['success'] = "Your Account has been created by the Name of " .  $username . ". You can now Discover New Features!";
                     header('Location: ../signup/');//to be changed
-                    $_SESSION['success'] = "Your Free Account has been created You can now <a href='../login/' style='text-decoration:none;'>Login</a>";
                 }else{
                     $_SESSION['error'] = "Please Check the Confirm Password is same as Password ";
                     header('Location: ../signup/');//to be changed

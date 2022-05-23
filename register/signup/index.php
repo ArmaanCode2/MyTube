@@ -41,7 +41,8 @@ if(isset($_SESSION['success'])){
     <strong>Success!  </strong> ' . $_SESSION['success'] .'
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>';
-    session_destroy();      
+  unset($_SESSION['success']); 
+    header("refresh:1;url=../../");
 }
 
 ?>

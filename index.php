@@ -11,10 +11,9 @@
   </head>
   <body>
     <!-- checking if user is logged in or not -->
-
   <?php
   session_start();
-  if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true ){
+  if(isset($_SESSION['loggedin'])){
       $loggedin = true;
   }else{
     $loggedin = false;
