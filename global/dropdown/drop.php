@@ -2,7 +2,7 @@
 echo '<div class="dropdown allllll">
     <div class="account bottom-line">
         <img src="global/dropdown/img/background.jpg" alt="Profile Picture">
-        <p class="profileName">Armaan</p>
+        <p class="profileName">' . $_SESSION['username'] . '</p>
         <a href="https://myaccount.google.com/u/0/" target="_blank" class="Account-refer roboto">Manage your Google Account</a>
         <img onclick="dropdownClose()" src="global/dropdown/img/cross.png" alt="close" class="d-cross">
 </div>
