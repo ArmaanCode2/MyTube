@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <meta http-equiv="pragma" content="no-cache" />
     <title>MyTube</title>
-    <link href="style.css?version=14" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="global/dropdown/style.css?version=7">
+    <link href="style.css?version=15" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="global/dropdown/style.css?version=8">
     <script src="https://kit.fontawesome.com/709718c5e6.js" crossorigin="anonymous"></script>
     <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
   </head>
@@ -24,8 +25,8 @@
     <div id="leftside">
       <div id="searchbox">
         <input onfocusout="searchFocusOut()" onfocus="searchFocusIn()" class="searchInput" type="text" placeholder="Search">
-        <div class="h"><img src="global/search.png" class="icon-size" alt="search-icon"></div>
-        <div id="i2"><img src="global/microphone.png" class="icon-size" alt="microphone-icon"></div>
+        <div class="h"><img src="global/searchbar/search.png" class="icon-size" alt="search-icon"></div>
+        <div id="i2"><img src="global/searchbar/microphone.png" class="icon-size" alt="microphone-icon"></div>
       </div>
 
 <div id="home" class="h1">
@@ -149,7 +150,7 @@ if($loggedin){
 // session_destroy();
 if($loggedin){
   echo '
-      <img class="flags red-flag" src="global/red-flag.png" width="30" height="30" alt="red flag">
+      <img class="flags red-flag" src="global/logo/red-flag.png" width="30" height="30" alt="red flag">
       <div id="i3" title="Create"><i class="fas fa-video fa-lg"></i></div>
       <div id="i6"><!--Evrything shown in dropdown-->
         <i onclick="showDropdown()" class="fas fa-user-circle fa-lg"></i>
@@ -166,7 +167,7 @@ if($loggedin){
   if($loggedin){
     echo '<div id="i4" title="Mytube apps"><i class="fas fa-mobile-alt fa-lg"></i></div>
           <div id="i5" title="Notifications"><i class="fas fa-bell fa-lg"></i></div>
-          <img class="flags india-flag" src="global/india-flag.png" width="30" height="30" alt="india flag">
+          <img class="flags india-flag" src="global/logo/india-flag.png" width="30" height="30" alt="india flag">
         ';
       }
   ?>
