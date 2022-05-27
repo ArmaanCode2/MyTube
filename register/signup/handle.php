@@ -9,6 +9,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $pass = $_POST['pass'];
         $cpass = $_POST['cpass'];
         $existSql = "SELECT * FROM `register` WHERE name = '$username'";//to be changed
+        $row=mysqli_fetch_assoc($existSql);
         $result = mysqli_query($conn,$existSql);
         $numExistRows = mysqli_num_rows($result);
         if($numExistRows > 0){
@@ -24,10 +25,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             }else{
                 if($pass === $cpass){
                     $hash  = password_hash($pass , PASSWORD_DEFAULT);
-                    $sql ="INSERT INTO `register` (`name`, `email`,  `password`,`date`) VALUES ('$username', '$email', '$hash',current_timestamp())";//to be changed
+                    $sql ="INSERT INTO `register` (`name`, `email`,  `password`,`date`,`profile_url`) VALUES ('$username', '$email', '$hash',current_timestamp(),'global/dropdown/img/default-edit.jpg')";//to be changed
                     $result = mysqli_query($conn,$sql);
                     $_SESSION['loggedin'] = true;
                     $_SESSION['username'] = $username;
+                    $_SESSION['userid'] = $row['id'];
                     $_SESSION['success'] = "Your Account has been created by the Name of " .  $username . ". You can now Discover New Features!";
                     header('Location: ../signup/');//to be changed
                 }else{

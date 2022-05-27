@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="pragma" content="no-cache" />
     <title>MyTube</title>
-    <link href="style.css?version=15" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="global/dropdown/style.css?version=8">
+    <link href="style.css?version=17" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="global/dropdown/style.css?version=10">
     <script src="https://kit.fontawesome.com/709718c5e6.js" crossorigin="anonymous"></script>
     <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
   </head>
@@ -310,6 +310,6 @@ if($loggedin){
 
 
 </div>
-<script src="js/script.js?verson=5"></script>
+<script src="js/script.js?verson=6"></script>
   </body>
 </html>

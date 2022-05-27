@@ -27,12 +27,12 @@
 }
 
 .account img{
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     position: relative;
-    top: 30px;
-    left: 10px;
+    top: 10px;
+    left: 7px;
 }
 
 .roboto{
@@ -42,16 +42,17 @@
 .profileName{
     display: inline-block;
     position: relative;
-    left: 22px;
+    left: 4%;
+    top: -32%;
     font-size: 23px;
     font-weight: 500;
 }
 
 .Account-refer{
-    font-size: 16px;
+    font-size: 15px;
     position: relative;
-    top: 25px;
-    left: -73px;
+    top: 1%;
+    left: -20%;
     text-decoration: none;
     color: blue; 
 }

@@ -16,6 +16,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
               if(password_verify($pass,$row['password'])){
                 $_SESSION['loggedin'] = true;
                 $_SESSION['username'] = $row['name'];
+                $_SESSION['userid'] = $row['id'];
+                $_SESSION['photo'] = $row['profile_url'];
                 header("Location: ../login/");//to be changed
                 // header("refresh:1;url=../../"); //to be changed
               }else{

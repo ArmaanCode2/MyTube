@@ -1,7 +1,13 @@
+
 <?php
+if(isset($_SESSION['photo'])){
+    $photourl = $_SESSION['photo'];
+}else{
+    $photourl = "global/dropdown/img/default-edit.jpg";
+}
 echo '<div class="dropdown allllll">
     <div class="account bottom-line">
-        <img src="global/dropdown/img/default-edit.jpg" alt="Profile Picture">
+        <img class="profilephoto" onclick ="profilePhotoChange()" src="' . $photourl . '" alt="Profile Picture">
         <p class="profileName">' . $_SESSION['username'] . '</p>
         <a href="https://myaccount.google.com/u/0/" target="_blank" class="Account-refer roboto">Manage your Google Account</a>
         <img onclick="dropdownClose()" src="global/dropdown/img/cross.png" alt="close" class="d-cross">
@@ -24,7 +30,6 @@ echo '<div class="dropdown allllll">
         <p class="ptag">Sign Out</p>
     </div>
 </section>
-
 <section class="acc-controls bottom-line">
     <div class="channel cursor hover">
         <img class="icon" src="global/dropdown/img/moon.png" alt="User">

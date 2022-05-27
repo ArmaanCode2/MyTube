@@ -46,3 +46,15 @@ function dropdownClose(){
     blend.style.display = "none";
     body.classList.remove("overflow")
 }
+
+// for clicking on profile picture
+function profilePhotoChange(){
+    window.location.href = 'profilephoto/';
+}
+
+function detectFileChange(){
+    const file = document.querySelector('#file');
+    file.addEventListener('change',() => {
+        document.querySelector('.submit').click();
+    })
+}

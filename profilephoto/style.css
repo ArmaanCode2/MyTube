@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    margin-top: 10px;
+}
+
+.upload{
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+p{
+    color: #747474;
+    font-size:15px;
+    margin: 5px 0 20px 0;
+}
+
+.profilephoto{
+    background-color: #F9F9F9;
+    width: 20vw;
+    height: 30vh;
+    display: inline-block;
+}
+
+.profile-photo-picture{
+    width: 12vw;
+    height: 22vh;
+    border-radius: 50%;
+    position: relative;
+    top: 12%;
+    left: 19%;
+}
+
+.information{
+    width: 22%;
+    position: absolute;
+    left: 25%;
+    display: inline-block;
+}
+
+.information p{
+    margin: 0;
+}
+
+.controls{
+    position: absolute;
+    top: 27%;
+    left: 24.3%;
+    display: inline-block;
+}
+
+input[type="file"]{
+    position: relative;
+    transform: scale(1.5);
+    opacity: 0;
+}
+
+.uploadBtn{
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.uploadBtn i{
+    font-style: normal;
+    position: relative;
+    top: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
