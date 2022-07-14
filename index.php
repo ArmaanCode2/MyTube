@@ -310,6 +310,6 @@ if($loggedin){
 
 
 </div>
-<script src="js/script.js?verson=6"></script>
+<script src="js/script.js?verson=7"></script>
   </body>
 </html>

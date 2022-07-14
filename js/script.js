@@ -58,3 +58,9 @@ function detectFileChange(){
         document.querySelector('.submit').click();
     })
 }
+
+
+//direct to chatroom
+function chatroom(){
+    window.location.href = 'chatroom';
+}
