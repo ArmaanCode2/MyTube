@@ -81,8 +81,8 @@ if($loggedin){
   <hr width="14%" id="hr">';
 }
 ?>
-<div id="PREMIUM" class="h1 all">
-<i class="fab fa-youtube"><b><p style="display: inline;color:#212121; font-size:15px;">MyTube Premium</p></b></i>
+<div id="PREMIUM" class="h1 all" onclick="chatroom()">
+<i class="fas fa-comment"><b><p style="display: inline;color:#212121; font-size:15px;">MyTube Chatroom</p></b></i>
 </div>
 <?php
 if($loggedin){
@@ -99,36 +99,14 @@ if($loggedin){
 <div id="live" class="h1 all">
 <i class="fas fa-stream"><b><p style="display: inline;color:#212121;">Live</p></b></i>
 </div>
-<?php
-if($loggedin){
-  echo '
-  <div id="fash" class="h1 all">
-    <i class="fas fa-tshirt"><b><p style="display: inline;color:#212121;">Fasion & Beauty</p></b></i>
-  </div>
-  
-  <div id="your" class="h1 all">
-    <i class="fas fa-lightbulb"><b><p style="display: inline;color:#212121;">Learning</p></b></i>
-  </div>
-  
-  <div id="game" class="h1 all">
-    <i class="fas fa-trophy"><b><p style="display: inline;color:#212121;">Sports</p></b></i>
-  </div>';
-}
-?>
 
 <hr width="14%" id="hr">
 
-<div id="your" class="h1 all">
-<i class="fas fa-cog"><b><p style="display: inline;color:#212121;">Settings</p></b></i>
-</div>
 
 <div id="PREMIUM" class="h1 all">
 <a href="report/" target="_blank"><i class="fas fa-flag"><b><p style="display: inline;color:#212121;">Report</p></b></i></a>
 </div>
 
-<div id="game" class="h1 all">
-<i class="fas fa-question-circle"><b><p style="display: inline;color:#212121;">Help</p></b></i>
-</div>
 
 <div id="send" class="h1 all">
 <i class="fas fa-comments"><b><p style="display: inline;color:#212121;">Send Feedback</p></b></i>

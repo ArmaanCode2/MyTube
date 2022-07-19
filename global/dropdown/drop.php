@@ -31,9 +31,9 @@ echo '<div class="dropdown allllll">
     </div>
 </section>
 <section class="acc-controls bottom-line">
-    <div onclick="chatroom()" class="channel cursor hover">
-        <img class="icon" src="global/dropdown/img/chat.png" alt="Chatroom">
-        <p class="ptag">MyTube Chatroom</p>
+    <div class="channel cursor hover">
+        <img class="icon" src="global/dropdown/img/moon.png" alt="Theme">
+        <p class="ptag">Theme: Light</p>
     </div>
     <div class="studio cursor hover">
         <img class="icon" src="global/dropdown/img/language.png" alt="Mytube Studio">

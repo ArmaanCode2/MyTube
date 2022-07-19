@@ -41,8 +41,7 @@ if($result){
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/product/">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 <style>
 body {
   margin: 0 auto;
@@ -98,12 +97,73 @@ body {
     height:500px;
     overflow-y:scroll;
 }
+.botao-wpp {
+  text-decoration: none;
+  color: #eee;
+  display: inline-block;
+  background-color: #25d366;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  position: absolute;
+  top:17%;
+  left: 1%;
+  cursor: pointer;
+}
+
+.share{
+  position: absolute;
+  top: 1%;
+  left:1%;
+}
+a:hover{
+  color: #eee;
+}
+
+/* for copy button */
+a.btn-copy-url{
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  text-decoration: none;
+  background: #0077e7;
+  color: #fff;
+  padding: 8px 33px;
+  line-height: 40px;
+  transition: all .3s ease;
+  position: absolute;
+  top: 7%;
+  left:1%;
+  border-radius: 3px;
+  cursor: pointer;
+}
+a.btn-copy-url:hover{background: #1d83e4}
+a.btn-copy-url:active{background: hsl(209, 89%, 14%)}
+@media only screen and (max-width: 1200px){
+  h3,a{
+    left: 36% !important;
+  }
+ h3{
+  top: 672px !important;
+ }
+.btn-copy-url{
+  top: 114% !important;
+ }
+ .botao-wpp{
+  top: 124% !important;
+ }
+}
 </style>
 </head>
 <body>
 
 <h2>Chat Messages - <?php echo $roomname; ?></h2>
 
+<h3 class="share">SHARE WITH-</h3>
+<a class="btn-copy-url" onClick="CopyLink()">Copy URL</a>
+<a class="botao-wpp" onclick="SendLink()">
+  <!-- ícon -->
+  Whatsapp
+</a>
 <div class="container">
     <div class="anyclass">
   
@@ -142,6 +202,22 @@ body {
             document.getElementsByClassName('anyclass')[0].innterHTML = data;});
         return false;
     });
+    function SendLink(){
+      let url = document.location.href;
+      
+      navigator.clipboard.writeText(url).then(function() {
+        let a = document.querySelector('.botao-wpp')
+        a.href=`whatsapp://send?text=${url}`;
+        a.click();
+      }, function() {
+        a.innerHTML = "Some error ocurred Try Again";
+    });
+  }
+
+  function CopyLink(){
+    let url = document.location.href;
+    navigator.clipboard.writeText(url);
+  }
 </script>
 </body>
 </html>
